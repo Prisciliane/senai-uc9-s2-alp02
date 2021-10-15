@@ -1,0 +1,108 @@
+/* Estilo de Font */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* estilo do header */
+header img {
+    width: 150px;
+}
+/*menu mobile*/
+#mobile-menu {
+    margin-top: 15px;
+   /*float: right;*/
+   display: none;
+}
+#mobile-menu img {
+    width: 50px;
+}
+header nav {
+    float: right;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+header nav ul li {
+    font-weight: bold;
+}
+
+/* itens do banner*/
+#banner, #novidade {
+    background-color: rgb(5, 92, 92);
+    padding: 50px;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    margin-top: 20px;
+}
+#banner img, #novidade img {
+    width: 450px;
+}
+#banner div, #novidade div{
+    margin-top: 20px;
+    width: 600px;
+}
+/* Seção de Destaques */
+.grupo-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+/* class css*/
+.texto-centralizado {
+    text-align: center;
+}
+.senai-card {
+    width: 238px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.senai-card img {
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+.senai-card div {
+    padding: 10px;
+}
+/* ajuste carrosel*/
+.carousel-item  {
+    height: 80vh;
+}
+.carousel-item img {
+    height: 100%;
+}
+.carousel-caption {
+    background-color: rgba(192, 192, 192, 0.644);
+    border-radius: 20px;
+}
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: url("../Imagens/maior.png");
+}
+.carousel-control-prev-icon {
+    background-image: url("../Imagens/menor.png");
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
