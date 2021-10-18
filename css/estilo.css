@@ -4,20 +4,21 @@
 }
 
 /* estilo do header */
-header img {
-    width: 150px;
+header {
+    background: linear-gradient(269.77deg, #000207 0.05%, #2D8497 70.17%, #9badec 100%);
 }
 /*menu mobile*/
 #mobile-menu {
-    margin-top: 15px;
-   /*float: right;*/
-   display: none;
+    margin-top: 10px;
+   float: right;
+   margin-right: 15px;
 }
 #mobile-menu img {
     width: 50px;
 }
 header nav {
-    float: right;
+    /*float: right;*/
+    display: none;
 }
 header nav ul {
     list-style: none;
@@ -33,21 +34,110 @@ header nav ul li {
 /* itens do banner*/
 #banner, #novidade {
     background-color: rgb(5, 92, 92);
-    padding: 50px;
+    padding: 10px;
     color: azure;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #banner img, #novidade img {
-    width: 450px;
+    width: 90vw;
 }
 #banner div, #novidade div{
-    margin-top: 20px;
-    width: 600px;
+    margin-top: 10px;
+    width: 90vw;
 }
+/* logotipo */
+.img-logo {
+    width: 150px;
+    margin: 10px;
+}
+/* estilo da galeria */
+#galeria {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Footer */
+footer {
+    background: linear-gradient(269.77deg, #000207 0.05%, #2D8497 70.17%, #9badec 100%);
+    display: grid;
+    grid-template-areas: 
+    'enderecos1 enderecos3'
+    'enderecos2 midias-sociais';
+    padding: 05px;
+}
+#logotipo-rodape {
+    display: none;
+    grid-area: imagem-logo;
+}
+.enderecos-rodape1 {
+    grid-area: enderecos1;
+    font-size: small;
+}
+.enderecos-rodape2 {
+    grid-area: enderecos2;
+    font-size: small;
+}
+.enderecos-rodape3 {
+    grid-area: enderecos3;
+    font-size: small;
+}
+
+#midias-sociais {
+    grid-area: midias-sociais;
+}
+#midias-sociais img {
+    height: 40px;
+}
+#menu-rodape {
+    display: none;
+    grid-area: menu-rodape;
+}
+#menu-rodape ul {
+    list-style: none;
+}
+#menu-rodape ul li {
+    margin-bottom: 10px;
+}
+@media screen and (min-width:720px) {
+    #mobile-menu {
+        display: none;
+    }
+    header nav {
+        display: block;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #banner, #novidade {
+        padding: 50px;
+        column-gap: 50px;
+        margin-top: 20px;
+    }
+    #banner img, #novidade img {
+        width: 450px;
+    }
+    #banner div, #novidade div{
+        margin-top: 20px;
+        width: 600px;
+    }
+    footer {
+        grid-template-areas: 
+        'imagem-logo enderecos1 midias-sociais'
+        'imagem-logo enderecos2 menu-rodape'
+        'imagem-logo enderecos3 menu-rodape';
+        padding: 20px;
+    }
+    #logotipo-rodape {
+        display: block;
+    }
+    #menu-rodape {
+        display: block;
+        
+    }
+}
+
 /* Seção de Destaques */
 .grupo-cards {
     display: flex;
