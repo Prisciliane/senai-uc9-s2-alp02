@@ -65,7 +65,7 @@ footer {
     grid-template-areas: 
     'enderecos1 enderecos3'
     'enderecos2 midias-sociais';
-    padding: 05px;
+    padding: 10px;
 }
 #logotipo-rodape {
     display: none;
