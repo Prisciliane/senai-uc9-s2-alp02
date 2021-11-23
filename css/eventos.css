@@ -1,0 +1,17 @@
+.div-evento{
+    background-color: aqua;
+    margin: 20px;
+    padding: 20ps;
+}
+
+.link-topo{
+    text-align: right;
+}
+
+.clicavel:hover{
+    cursor: pointer;
+}
+
+.cor-fundo-azul{
+    background-color: blue;
+}
